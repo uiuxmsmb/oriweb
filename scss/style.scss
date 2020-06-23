@@ -1,0 +1,7 @@
+// Import variable
+@import 'vars.scss';
+
+// Set root font size (16 is default)
+:root {
+    font-size: $root-font-size;
+}
