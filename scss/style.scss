@@ -143,6 +143,7 @@ header {
 section {
     padding: $gap * 4 0;
     .section-heading {
+        margin-bottom: $gap * 2;
         h3 {
             font-size: 42px;
             font-weight: 700;
@@ -157,5 +158,60 @@ section {
 
 // Section bagaimana
 .howitworks {
-
+    .card {
+        position: relative;
+        padding-top: $gap;
+        margin-bottom: $gap;
+        &:hover {
+            box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.09);
+            border-color: transparent;
+        }
+        &:before {
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            top: -15px;
+            width: 30px;
+            height: 30px;
+            background-color: $accent-color;
+            content: "";
+            border-radius: 15px;
+            z-index: 2;
+            text-align: center;
+            font-weight: 700;
+            line-height: 30px;
+            box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.25);
+            color: #ffffff;
+        }
+        .card-body {
+            padding: $gap;
+            .point-img {
+                width: 100%;
+                max-width: 96px;
+                margin-bottom: $gap;
+            }
+            .card-title {
+                font-size: 22px;
+            }
+            .card-text {
+                color: $muted-text-color;
+                font-size: 14px;
+            }
+        }
+        &.first{
+            &:before {
+                content: "1";
+            }
+        }
+        &.second{
+            &:before {
+                content: "2";
+            }
+        }
+        &.third{
+            &:before {
+                content: "3";
+            }
+        }
+    }
 }

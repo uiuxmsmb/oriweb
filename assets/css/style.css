@@ -123,10 +123,55 @@ header {
 
 section {
   padding: 120px 0; }
-  section .section-heading h3 {
-    font-size: 42px;
-    font-weight: 700; }
-  section .section-heading p {
-    font-size: 20px;
-    font-weight: 300;
-    color: #9B9B9B; }
+  section .section-heading {
+    margin-bottom: 60px; }
+    section .section-heading h3 {
+      font-size: 42px;
+      font-weight: 700; }
+    section .section-heading p {
+      font-size: 20px;
+      font-weight: 300;
+      color: #9B9B9B; }
+
+.howitworks .card {
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 30px; }
+  .howitworks .card:hover {
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+    border-color: transparent; }
+  .howitworks .card:before {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #F5BE23;
+    content: "";
+    border-radius: 15px;
+    z-index: 2;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+    color: #ffffff; }
+  .howitworks .card .card-body {
+    padding: 30px; }
+    .howitworks .card .card-body .point-img {
+      width: 100%;
+      max-width: 96px;
+      margin-bottom: 30px; }
+    .howitworks .card .card-body .card-title {
+      font-size: 22px; }
+    .howitworks .card .card-body .card-text {
+      color: #9B9B9B;
+      font-size: 14px; }
+  .howitworks .card.first:before {
+    content: "1"; }
+  .howitworks .card.second:before {
+    content: "2"; }
+  .howitworks .card.third:before {
+    content: "3"; }
