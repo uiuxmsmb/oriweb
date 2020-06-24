@@ -12,6 +12,9 @@
 body {
   color: #4A4A4A; }
 
+.card {
+  border-color: #E5E5EA; }
+
 .hero {
   background: url(../img/hero_main_img@2x.jpg);
   background-size: cover;
@@ -124,54 +127,102 @@ header {
 section {
   padding: 120px 0; }
   section .section-heading {
-    margin-bottom: 60px; }
+    margin-bottom: 90px; }
     section .section-heading h3 {
       font-size: 42px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 20px; }
     section .section-heading p {
       font-size: 20px;
       font-weight: 300;
       color: #9B9B9B; }
 
-.howitworks .card {
-  position: relative;
-  padding-top: 30px;
-  margin-bottom: 30px; }
-  .howitworks .card:hover {
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
-    border-color: transparent; }
-  .howitworks .card:before {
-    position: absolute;
-    left: 50%;
-    margin-left: -15px;
-    top: -15px;
-    width: 30px;
-    height: 30px;
-    background-color: #F5BE23;
-    content: "";
-    border-radius: 15px;
-    z-index: 2;
-    text-align: center;
-    font-weight: 700;
-    line-height: 30px;
-    -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
-    color: #ffffff; }
-  .howitworks .card .card-body {
-    padding: 30px; }
-    .howitworks .card .card-body .point-img {
-      width: 100%;
-      max-width: 96px;
-      margin-bottom: 30px; }
-    .howitworks .card .card-body .card-title {
-      font-size: 22px; }
-    .howitworks .card .card-body .card-text {
+.howitworks {
+  -webkit-box-shadow: 0px 1px 0px 0px #E5E5EA;
+          box-shadow: 0px 1px 0px 0px #E5E5EA; }
+  .howitworks .card {
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 30px; }
+    .howitworks .card:hover {
+      -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+              box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+      border-color: transparent; }
+    .howitworks .card:before {
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+      top: -15px;
+      width: 30px;
+      height: 30px;
+      background-color: #F5BE23;
+      content: "";
+      border-radius: 15px;
+      z-index: 2;
+      text-align: center;
+      font-weight: 700;
+      line-height: 30px;
+      -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+              box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+      color: #ffffff; }
+    .howitworks .card .card-body {
+      padding: 30px; }
+      .howitworks .card .card-body .point-img {
+        width: 100%;
+        max-width: 96px;
+        margin-bottom: 30px; }
+      .howitworks .card .card-body .card-title {
+        font-size: 22px; }
+      .howitworks .card .card-body .card-text {
+        color: #9B9B9B;
+        font-size: 14px; }
+    .howitworks .card.first:before {
+      content: "1"; }
+    .howitworks .card.second:before {
+      content: "2"; }
+    .howitworks .card.third:before {
+      content: "3"; }
+
+.whyus .content {
+  background: url(../img/why_image@2x.png);
+  background-repeat: no-repeat;
+  background-size: 705px 626px;
+  z-index: 0;
+  padding: 60px 0; }
+  .whyus .content .media {
+    border: 1px solid #E5E5EA;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 20px; }
+    .whyus .content .media .media-circle {
+      margin-right: 30px;
+      width: 88px;
+      height: 88px;
+      border-radius: 44px;
+      font-size: 36px;
+      text-align: center;
+      line-height: 92px;
+      color: #ffffff;
+      position: relative;
+      background: #67b26f;
+      background: -o-linear-gradient(315deg, #67b26f 0%, #4ca2cd 100%);
+      background: linear-gradient(135deg, #67b26f 0%, #4ca2cd 100%); }
+      .whyus .content .media .media-circle:before {
+        position: absolute;
+        z-index: 2;
+        top: -3px;
+        right: -4px;
+        width: 31px;
+        height: 30px;
+        content: "";
+        background: url(../img/why_check@2x.png);
+        background-repeat: no-repeat;
+        background-size: 31px 30px; }
+    .whyus .content .media .media-body {
       color: #9B9B9B;
-      font-size: 14px; }
-  .howitworks .card.first:before {
-    content: "1"; }
-  .howitworks .card.second:before {
-    content: "2"; }
-  .howitworks .card.third:before {
-    content: "3"; }
+      font-size: 16px; }
+      .whyus .content .media .media-body h5 {
+        color: #4A4A4A;
+        font-size: 22px;
+        margin-top: 5px; }

@@ -8,6 +8,9 @@
 body {
     color: $text-color;
 }
+.card {
+    border-color: $border-color;
+}
 
 .hero {
     background: url(../img/hero_main_img@2x.jpg);
@@ -143,10 +146,11 @@ header {
 section {
     padding: $gap * 4 0;
     .section-heading {
-        margin-bottom: $gap * 2;
+        margin-bottom: $gap * 3;
         h3 {
             font-size: 42px;
             font-weight: 700;
+            margin-bottom: $gap / 1.5;
         }
         p {
             font-size: 20px;
@@ -158,6 +162,7 @@ section {
 
 // Section bagaimana
 .howitworks {
+    box-shadow: 0px 1px 0px 0px $border-color;
     .card {
         position: relative;
         padding-top: $gap;
@@ -211,6 +216,59 @@ section {
         &.third{
             &:before {
                 content: "3";
+            }
+        }
+    }
+}
+
+// Section kenapa
+.whyus {
+    .content {
+        // min-height: 626px;
+        background: url(../img/why_image@2x.png);
+        background-repeat: no-repeat;
+        background-size: 705px 626px;
+        z-index: 0;
+        padding: $gap * 2 0;
+        .media {
+            border: 1px solid $border-color;
+            background-color: #ffffff;
+            border-radius: $radius;
+            padding: $gap;
+            margin-bottom: $gap / 1.5;
+            .media-circle {
+                margin-right: $gap;
+                width: 88px;
+                height: 88px;
+                border-radius: 44px;
+                font-size: 36px;
+                text-align: center;
+                line-height: 92px;
+                color: #ffffff;
+                position: relative;
+                background: rgb(103,178,111);
+                background: linear-gradient(135deg, rgba(103,178,111,1) 0%, rgba(76,162,205,1) 100%);
+                &:before {
+                    position: absolute;
+                    z-index: 2;
+                    top: -3px;
+                    right: -4px;
+                    width: 31px;
+                    height: 30px;
+                    content: "";
+                    background: url(../img/why_check@2x.png);
+                    background-repeat: no-repeat;
+                    background-size: 31px 30px;
+                }
+            }
+            .media-body {
+                color: $muted-text-color;
+                font-size: 16px;
+                h5 {
+                    color: $text-color;
+                    font-size: 22px;
+                    margin-top: 5px;
+                }
             }
         }
     }
