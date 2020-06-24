@@ -139,3 +139,23 @@ header {
 }
 
 
+// Section
+section {
+    padding: $gap * 4 0;
+    .section-heading {
+        h3 {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: $muted-text-color;
+        }
+    }
+}
+
+// Section bagaimana
+.howitworks {
+
+}

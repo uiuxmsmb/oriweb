@@ -120,3 +120,13 @@ header {
               header nav ul > li > ul > li > a:hover {
                 text-decoration: none;
                 background-color: #4CA2CD; }
+
+section {
+  padding: 120px 0; }
+  section .section-heading h3 {
+    font-size: 42px;
+    font-weight: 700; }
+  section .section-heading p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #9B9B9B; }
