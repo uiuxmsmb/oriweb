@@ -7,6 +7,7 @@
 }
 body {
     color: $text-color;
+    font-family: $custom-google-font;
 }
 .card {
     border-color: $border-color;
@@ -268,6 +269,133 @@ section {
                     color: $text-color;
                     font-size: 22px;
                     margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Proyek pilihan
+.theproject {
+    &.homeproject {
+        background-color: $light-bg;
+    }
+    .card {
+        .img-wrap {
+            position: relative;
+            &:before {
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+            }
+            .project-status {
+                position: absolute;
+                z-index: 2;
+                top: $gap / 3;
+                right: 0;
+                background: rgb(103,178,111);
+                background: linear-gradient(135deg, rgba(103,178,111,1) 0%, rgba(76,162,205,1) 100%);
+                padding: $gap / 6 $gap / 2;
+                font-size: 14px;
+                color: #ffffff;
+                border-radius: 15px 0 0 15px;
+                &.closed {
+                    background: $muted-text-color;
+                }
+            }
+            .project-progress {
+                position: absolute;
+                z-index: 2;
+                bottom: 25px;
+                right: $gap;
+                left: $gap;
+                .text-label {
+                    color: #ffffff;
+                    margin-bottom: $gap / 4;
+                    font-size: 14px;
+                }
+                .progress {
+                    padding: 4px;
+                    background-color: rgba(255,255,255,.25);
+                    height: 18px;
+                    border-radius: 9px;
+                    .progress-bar {
+                        border-radius: 5px;
+                        background: rgb(103,178,111);
+                        background: linear-gradient(135deg, rgba(103,178,111,1) 0%, rgba(76,162,205,1) 100%);
+                    }
+                }
+            }
+        }
+        .card-body {
+            .card-title {
+                font-size: 22px;
+                font-weight: 600;
+                > a {
+                    color: $text-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: $text-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .card-subtitle {
+                font-size: 14px;
+                color: $muted-text-color;
+                margin-bottom: $gap / 6;
+            }
+            .pricing {
+                color: $yellow;
+                padding: $gap / 6 $gap / 2;
+                background-color: rgba($accent-color,.25);
+                border-radius: 15px;
+                font-weight: 700;
+            }
+            .content-list {
+                list-style: none;
+                padding: 0;
+                margin: $gap / 1.5 0;
+                > li {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: $gap / 5 0;
+                    color: $muted-text-color;
+                    span, strong {
+                        position: relative;
+                        z-index: 2;
+                        background-color: #ffffff;
+                        padding-right: 5px;
+                    }
+                    > strong {
+                        color: $text-color;
+                        font-weight: 700;
+                        padding-right: 0;
+                        padding-left: 5px;
+                    }
+                    &:before {
+                        left: 0;
+                        right: 0;
+                        position: absolute;
+                        height: 1px;
+                        content: "";
+                        top: 51%;
+                        background: repeating-linear-gradient(
+                        to right,
+                        $border-color,
+                        $border-color 3px,
+                        #ffffff 3px,
+                        #ffffff 6px
+                        );
+                    }
                 }
             }
         }
