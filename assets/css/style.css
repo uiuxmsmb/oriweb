@@ -391,3 +391,10 @@ section {
         color: #ffffff; }
       .cta .content .section-heading p {
         color: #ffffff; }
+
+.maediapartner {
+  padding: 60px 0;
+  text-align: center; }
+  .maediapartner img {
+    width: 100%;
+    max-width: 922px; }
