@@ -479,3 +479,78 @@ section {
         max-width: 922px;
     }
 }
+
+// Footer
+footer {
+    background-color: $footer-bg;
+    color: #ffffff;
+    padding-top: $gap * 1.5;
+    .footer-nav {
+        margin-bottom: $gap;
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                > li {
+                    display: inline-block;
+                    margin: 0 $gap / 1.5;
+                    > a {
+                        display: block;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .footer-mid-section {
+        margin-bottom: $gap;
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .icons {
+            .item {
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                border: 1px solid rgba(255,255,255,.2);
+                border-radius: 16px;
+                text-align: center;
+                line-height: 32px;
+                color: #ffffff;
+                font-size: 16px;
+                margin: 0 $gap / 10;
+            }
+        }
+    }
+    .footer-sm-nav {
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-size: 12px;
+                > li {
+                    display: inline-block;
+                    margin: 0 $gap / 3;
+                    > a {
+                        display: block;
+                        color: rgba(255,255,255,.4);
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: $gap * 1.5;
+        background-color: $footer-copy;
+        text-align: center;
+        font-size: 12px;
+        padding: $gap / 1.5 0;
+    }
+}
