@@ -13,6 +13,17 @@ body {
     border-color: $border-color;
 }
 
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    &.btn-primary {
+        background-color: $accent-color;
+        border-color: $accent-color;
+        color: #ffffff;
+        border-radius: $radius;
+    }
+}
+
 .hero {
     background: url(../img/hero_main_img@2x.jpg);
     background-size: cover;
@@ -43,7 +54,14 @@ body {
             font-size: 20px;
             color: rgba(255,255,255,.6);
             font-weight: 300;
-            margin-bottom: $gap * 3;
+            margin-bottom: $gap * 4;
+        }
+        .btn-primary {
+            height: 60px;
+            padding-left: $gap;
+            padding-right: $gap;
+            box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+            padding-top: 17px;
         }
     }
 }
@@ -466,6 +484,13 @@ section {
             p {
                 color: #ffffff;
             }
+        }
+        .btn-primary {
+            height: 60px;
+            padding-left: $gap;
+            padding-right: $gap;
+            box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+            padding-top: 17px;
         }
     }
 }

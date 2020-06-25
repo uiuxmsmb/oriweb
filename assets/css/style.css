@@ -16,6 +16,15 @@ body {
 .card {
   border-color: #E5E5EA; }
 
+.btn {
+  font-weight: 600;
+  text-transform: uppercase; }
+  .btn.btn-primary {
+    background-color: #F5BE23;
+    border-color: #F5BE23;
+    color: #ffffff;
+    border-radius: 4px; }
+
 .hero {
   background: url(../img/hero_main_img@2x.jpg);
   background-size: cover;
@@ -45,7 +54,14 @@ body {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.6);
       font-weight: 300;
-      margin-bottom: 90px; }
+      margin-bottom: 120px; }
+    .hero .hero-content .btn-primary {
+      height: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+      -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+      padding-top: 17px; }
 
 header {
   height: 100px;
@@ -391,6 +407,13 @@ section {
         color: #ffffff; }
       .cta .content .section-heading p {
         color: #ffffff; }
+    .cta .content .btn-primary {
+      height: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+      -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+      padding-top: 17px; }
 
 .maediapartner {
   padding: 60px 0;
