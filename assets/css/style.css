@@ -197,7 +197,8 @@ section {
         max-width: 96px;
         margin-bottom: 30px; }
       .howitworks .card .card-body .card-title {
-        font-size: 22px; }
+        font-size: 22px;
+        font-weight: 600; }
       .howitworks .card .card-body .card-text {
         color: #9B9B9B;
         font-size: 14px; }
@@ -259,7 +260,8 @@ section {
       .whyus .content .media .media-body h5 {
         color: #4A4A4A;
         font-size: 22px;
-        margin-top: 5px; }
+        margin-top: 5px;
+        font-weight: 600; }
 
 .theproject.homeproject {
   background-color: #FAFAFA; }
