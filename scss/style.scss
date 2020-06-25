@@ -401,3 +401,46 @@ section {
         }
     }
 }
+
+// Dalam angla
+.orifact {
+    // <div class="fact-circle">
+    //         <div class="circle">
+    //           <div class="content">6.2<small>miliar</small></div>
+    //         </div><!-- /.circle -->
+    //         <span>Total Investasi</span>
+    //       </div><!-- /.fact-circle -->
+
+    .fact-circle {
+        margin-bottom: $gap;
+        text-align: center;
+        .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            margin: 0 auto;
+            margin-bottom: $gap / 1.5;
+            background: rgb(103,178,111);
+            background: linear-gradient(135deg, rgba(103,178,111,1) 0%, rgba(76,162,205,1) 100%);
+            .content {
+                width: 96px;
+                height: 96px;
+                background-color: #ffffff;
+                border-radius: 48px;
+                font-size: 36px;
+                font-weight: 700;
+                small {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $muted-text-color;
+                    display: block;
+                    margin-top: -($gap / 2);
+                }
+            }
+        }
+        span {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

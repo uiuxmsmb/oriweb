@@ -336,3 +336,32 @@ section {
       top: 51%;
       background: -o-repeating-linear-gradient(left, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px);
       background: repeating-linear-gradient(to right, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px); }
+
+.orifact .fact-circle {
+  margin-bottom: 30px;
+  text-align: center; }
+  .orifact .fact-circle .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #67b26f;
+    background: -o-linear-gradient(315deg, #67b26f 0%, #4ca2cd 100%);
+    background: linear-gradient(135deg, #67b26f 0%, #4ca2cd 100%); }
+    .orifact .fact-circle .circle .content {
+      width: 96px;
+      height: 96px;
+      background-color: #ffffff;
+      border-radius: 48px;
+      font-size: 36px;
+      font-weight: 700; }
+      .orifact .fact-circle .circle .content small {
+        font-size: 14px;
+        font-weight: 400;
+        color: #9B9B9B;
+        display: block;
+        margin-top: -15px; }
+  .orifact .fact-circle span {
+    font-size: 18px;
+    font-weight: 600; }
