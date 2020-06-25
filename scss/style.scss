@@ -104,6 +104,7 @@ header {
                 display: inline-block;
                 position: relative;
                 text-transform: uppercase;
+                z-index: 4;
                 &.active {
                     &:after {
                         content: "";
@@ -140,6 +141,7 @@ header {
                     padding-bottom: $gap /3;
                     border-radius: $radius;
                     display: none;
+                    z-index: 4;
                     > li {
                         display: block;
                         width: 180px;
@@ -149,11 +151,17 @@ header {
                             padding: $gap / 4 $gap / 2;
                             color: $text-color;
                             text-decoration: none;
+                            transition: color .3s ease-in-out, background-color .3s ease-in-out;
                             &:hover {
                                 text-decoration: none;
                                 background-color: $primary-color;
                             }
                         }
+                    }
+                }
+                &:hover {
+                    > ul {
+                        display: block;
                     }
                 }
             }

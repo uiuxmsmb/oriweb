@@ -97,7 +97,8 @@ header {
       header nav ul > li {
         display: inline-block;
         position: relative;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        z-index: 4; }
         header nav ul > li.active:after {
           content: "";
           height: 2px;
@@ -130,7 +131,8 @@ header {
           padding-top: 10px;
           padding-bottom: 10px;
           border-radius: 4px;
-          display: none; }
+          display: none;
+          z-index: 4; }
           header nav ul > li > ul > li {
             display: block;
             width: 180px;
@@ -139,10 +141,15 @@ header {
               display: block;
               padding: 7.5px 15px;
               color: #4A4A4A;
-              text-decoration: none; }
+              text-decoration: none;
+              -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+              -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+              transition: color .3s ease-in-out, background-color .3s ease-in-out; }
               header nav ul > li > ul > li > a:hover {
                 text-decoration: none;
                 background-color: #4CA2CD; }
+        header nav ul > li:hover > ul {
+          display: block; }
 
 section {
   padding: 120px 0; }
