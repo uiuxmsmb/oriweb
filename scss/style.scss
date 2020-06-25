@@ -404,13 +404,6 @@ section {
 
 // Dalam angla
 .orifact {
-    // <div class="fact-circle">
-    //         <div class="circle">
-    //           <div class="content">6.2<small>miliar</small></div>
-    //         </div><!-- /.circle -->
-    //         <span>Total Investasi</span>
-    //       </div><!-- /.fact-circle -->
-
     .fact-circle {
         margin-bottom: $gap;
         text-align: center;
@@ -441,6 +434,38 @@ section {
         span {
             font-size: 18px;
             font-weight: 600;
+        }
+    }
+}
+
+// CTA
+.cta {
+    background: url(../img/cta_bg_img@2x.jpg);
+    background-size: cover;
+    position: relative;
+    &:after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        background: rgb(103,178,111);
+        background: linear-gradient(135deg, rgba(103,178,111,.75) 0%, rgba(76,162,205,.75) 100%);
+    }
+    .content {
+        position: relative;
+        z-index: 3;
+        .section-heading {
+            margin-bottom: $gap * 2;
+            h3 {
+                font-size: 36px;
+                color: #ffffff;
+            }
+            p {
+                color: #ffffff;
+            }
         }
     }
 }
