@@ -94,7 +94,6 @@ header {
         }
     }
     nav {
-        font-size: 14px;
         margin-right: $gap / 2;
         ul {
             padding: 0;
@@ -112,7 +111,7 @@ header {
                         width: 70px;
                         background-color: #ffffff;
                         position: absolute;
-                        top: calc(100% + #{$gap});
+                        top: calc(100% + #{$gap - 4});
                         left: 50%;
                         margin-left: -35px;
                     }

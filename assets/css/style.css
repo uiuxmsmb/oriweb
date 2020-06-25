@@ -88,7 +88,6 @@ header {
     header .phone > i.icon {
       margin-right: 15px; }
   header nav {
-    font-size: 14px;
     margin-right: 15px; }
     header nav ul {
       padding: 0;
@@ -105,7 +104,7 @@ header {
           width: 70px;
           background-color: #ffffff;
           position: absolute;
-          top: calc(100% + 30px);
+          top: calc(100% + 26px);
           left: 50%;
           margin-left: -35px; }
         header nav ul > li.active > a {
