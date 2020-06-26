@@ -25,6 +25,16 @@ body {
     border-color: #F5BE23;
     color: #ffffff;
     border-radius: 4px; }
+  .btn.btn-success {
+    background-color: #67B26F;
+    border-color: #67B26F;
+    color: #ffffff;
+    border-radius: 4px; }
+  .btn.btn-large {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    padding-top: 17px; }
 
 .hero {
   background: url(../img/hero_main_img@2x.jpg);

@@ -22,6 +22,18 @@ body {
         color: #ffffff;
         border-radius: $radius;
     }
+    &.btn-success {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: #ffffff;
+        border-radius: $radius;
+    }
+    &.btn-large {
+        padding-left: $gap;
+        padding-right: $gap;
+        height: 60px;
+        padding-top: 17px;
+    }
 }
 
 .hero {
