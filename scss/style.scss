@@ -364,6 +364,7 @@ section {
     }
     .card {
         transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out;
+        margin-bottom: $gap;
         &:hover {
             box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.09);
             border-color: transparent;
@@ -650,3 +651,37 @@ footer {
 }
 
 // Project Page
+.projectpage {
+    padding: 0;
+    .content {
+        padding: $gap * 2 0;
+    }
+    .project-tab {
+        box-shadow: inset 0px -1px 0px 0px $border-color;
+        text-align: center;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            > li {
+                display: inline-block;
+                padding: 0 $gap;
+                > a {
+                    display: block;
+                    color: $muted-text-color;
+                    padding: ($gap / 3) + 3 0;
+                    &:hover {
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+                &.active {
+                    > a {
+                        color: $text-color;
+                        box-shadow: inset 0px -2px 0px 0px $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
