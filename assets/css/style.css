@@ -77,6 +77,28 @@ body {
         padding-left: 60px;
         padding-right: 30px;
         color: #ffffff; }
+        .hero .hero-content .project-search > .form-control::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .hero .hero-content .project-search > .form-control::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .hero .hero-content .project-search > .form-control:-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .hero .hero-content .project-search > .form-control::-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .hero .hero-content .project-search > .form-control::placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .hero .hero-content .project-search > .form-control:focus {
+          color: #ffffff; }
+          .hero .hero-content .project-search > .form-control:focus::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .hero .hero-content .project-search > .form-control:focus::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .hero .hero-content .project-search > .form-control:focus:-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .hero .hero-content .project-search > .form-control:focus::-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .hero .hero-content .project-search > .form-control:focus::placeholder {
+            color: rgba(255, 255, 255, 0.6); }
       .hero .hero-content .project-search:before {
         font-family: 'feathericon';
         position: absolute;
@@ -88,16 +110,6 @@ body {
         content: "";
         color: rgba(255, 255, 255, 0.6);
         font-size: 20px; }
-      .hero .hero-content .project-search ::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.6); }
-      .hero .hero-content .project-search ::-moz-placeholder {
-        color: rgba(255, 255, 255, 0.6); }
-      .hero .hero-content .project-search :-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.6); }
-      .hero .hero-content .project-search ::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.6); }
-      .hero .hero-content .project-search ::placeholder {
-        color: rgba(255, 255, 255, 0.6); }
       .hero .hero-content .project-search .btn {
         position: absolute;
         z-index: 3;

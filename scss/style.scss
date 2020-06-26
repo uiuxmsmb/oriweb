@@ -79,6 +79,15 @@ body {
                 padding-left: $gap * 2;
                 padding-right: $gap;
                 color: #ffffff;
+                &::placeholder {
+                    color: rgba(255,255,255,.6);
+                }
+                &:focus {
+                    color: #ffffff;
+                    &::placeholder {
+                        color: rgba(255,255,255,.6);
+                    }
+                }
             }
             &:before {
                 font-family: 'feathericon';
@@ -91,9 +100,6 @@ body {
                 content: "";
                 color: rgba(255,255,255,.6);
                 font-size: 20px;
-            }
-            ::placeholder {
-                color: rgba(255,255,255,.6);
             }
             .btn {
                 position: absolute;
