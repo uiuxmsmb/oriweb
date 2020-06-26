@@ -41,27 +41,75 @@ body {
         background: linear-gradient(135deg, rgba(103,178,111,.75) 0%, rgba(76,162,205,.75) 100%);
     }
     .hero-content {
-        padding: $gap * 5 0;
+        padding: $gap * 3 0;
         position: relative;
         z-index: 2;
         color: #ffffff;
         h2 {
-            font-size: 60px;
+            font-size: 42px;
             font-weight: 700;
-            margin-bottom: $gap;
+            margin-bottom: $gap / 3;
         }
         p {
             font-size: 20px;
             color: rgba(255,255,255,.6);
             font-weight: 300;
-            margin-bottom: $gap * 4;
+            margin-bottom: $gap;
         }
-        .btn-primary {
-            height: 60px;
-            padding-left: $gap;
-            padding-right: $gap;
-            box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
-            padding-top: 17px;
+        .project-search {
+            position: relative;
+            > .form-control {
+                height: 60px;
+                background-color: rgba(255,255,255,.2);
+                border-color: #ffffff;
+                position: relative;
+                z-index: 2;
+                padding-left: $gap * 2;
+                padding-right: $gap;
+                color: #ffffff;
+            }
+            &:before {
+                font-family: 'feathericon';
+                position: absolute;
+                z-index: 1;
+                left: $gap / 2;
+                top: $gap / 2;
+                width: 30px;
+                height: 30px;
+                content: "";
+                color: rgba(255,255,255,.6);
+                font-size: 20px;
+            }
+            ::placeholder {
+                color: rgba(255,255,255,.6);
+            }
+            .btn {
+                position: absolute;
+                z-index: 3;
+                padding-left: $gap;
+                padding-right: $gap;
+                top: $gap / 3;
+                right: $gap / 3;
+            }
+        }
+    }
+    &.home {
+        .hero-content {
+            padding: $gap * 5 0;
+            h2 {
+                font-size: 60px;
+                margin-bottom: $gap;
+            }
+            p {
+                margin-bottom: $gap * 4;
+            }
+            .btn-primary {
+                height: 60px;
+                padding-left: $gap;
+                padding-right: $gap;
+                box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+                padding-top: 17px;
+            }
         }
     }
 }
@@ -600,3 +648,5 @@ footer {
         padding: $gap / 1.5 0;
     }
 }
+
+// Project Page

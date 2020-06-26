@@ -6,6 +6,7 @@
  * @version 1.0.0
  * Copyright 2020. UNLICENSED licensed.
  */
+@charset "UTF-8";
 :root {
   font-size: 16px; }
 
@@ -42,20 +43,66 @@ body {
     background: -o-linear-gradient(315deg, rgba(103, 178, 111, 0.75) 0%, rgba(76, 162, 205, 0.75) 100%);
     background: linear-gradient(135deg, rgba(103, 178, 111, 0.75) 0%, rgba(76, 162, 205, 0.75) 100%); }
   .hero .hero-content {
-    padding: 150px 0;
+    padding: 90px 0;
     position: relative;
     z-index: 2;
     color: #ffffff; }
     .hero .hero-content h2 {
-      font-size: 60px;
+      font-size: 42px;
       font-weight: 700;
-      margin-bottom: 30px; }
+      margin-bottom: 10px; }
     .hero .hero-content p {
       font-size: 20px;
       color: rgba(255, 255, 255, 0.6);
       font-weight: 300;
+      margin-bottom: 30px; }
+    .hero .hero-content .project-search {
+      position: relative; }
+      .hero .hero-content .project-search > .form-control {
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: #ffffff;
+        position: relative;
+        z-index: 2;
+        padding-left: 60px;
+        padding-right: 30px;
+        color: #ffffff; }
+      .hero .hero-content .project-search:before {
+        font-family: 'feathericon';
+        position: absolute;
+        z-index: 1;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        content: "";
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 20px; }
+      .hero .hero-content .project-search ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+      .hero .hero-content .project-search ::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+      .hero .hero-content .project-search :-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+      .hero .hero-content .project-search ::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+      .hero .hero-content .project-search ::placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+      .hero .hero-content .project-search .btn {
+        position: absolute;
+        z-index: 3;
+        padding-left: 30px;
+        padding-right: 30px;
+        top: 10px;
+        right: 10px; }
+  .hero.home .hero-content {
+    padding: 150px 0; }
+    .hero.home .hero-content h2 {
+      font-size: 60px;
+      margin-bottom: 30px; }
+    .hero.home .hero-content p {
       margin-bottom: 120px; }
-    .hero .hero-content .btn-primary {
+    .hero.home .hero-content .btn-primary {
       height: 60px;
       padding-left: 30px;
       padding-right: 30px;
