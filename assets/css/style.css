@@ -336,12 +336,15 @@ section {
   transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out;
   transition: box-shadow .3s ease-in-out, border-color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   margin-bottom: 30px; }
-  .theproject .card:hover {
-    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
-    border-color: transparent; }
   .theproject .card .img-wrap {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
+    .theproject .card .img-wrap img {
+      -webkit-transition: -webkit-transform .3s ease-in-out;
+      transition: -webkit-transform .3s ease-in-out;
+      -o-transition: transform .3s ease-in-out;
+      transition: transform .3s ease-in-out;
+      transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
     .theproject .card .img-wrap:before {
       content: "";
       top: 0;
@@ -394,9 +397,12 @@ section {
     font-weight: 600; }
     .theproject .card .card-body .card-title > a {
       color: #4A4A4A;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: color .3s ease-in-out;
+      -o-transition: color .3s ease-in-out;
+      transition: color .3s ease-in-out; }
       .theproject .card .card-body .card-title > a:hover {
-        color: #4A4A4A;
+        color: #276a8c !important;
         text-decoration: none; }
   .theproject .card .card-body .card-subtitle {
     font-size: 14px;
@@ -441,6 +447,16 @@ section {
         top: 51%;
         background: -o-repeating-linear-gradient(left, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px);
         background: repeating-linear-gradient(to right, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px); }
+  .theproject .card:hover {
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
+    border-color: transparent; }
+    .theproject .card:hover .img-wrap img {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+    .theproject .card:hover .card-body .card-title > a {
+      color: #4CA2CD; }
 
 .orifact .fact-circle {
   margin-bottom: 30px;
