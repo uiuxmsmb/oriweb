@@ -221,8 +221,10 @@ header {
               -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
               transition: color .3s ease-in-out, background-color .3s ease-in-out; }
               header nav ul > li > ul > li > a:hover {
-                text-decoration: none;
-                background-color: #4CA2CD; }
+                color: #4CA2CD;
+                background-color: #F7F8FD; }
+            header nav ul > li > ul > li.active > a {
+              background-color: #4CA2CD; }
         header nav ul > li:hover > ul {
           display: block; }
 

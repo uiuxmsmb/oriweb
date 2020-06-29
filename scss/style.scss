@@ -228,7 +228,12 @@ header {
                             text-decoration: none;
                             transition: color .3s ease-in-out, background-color .3s ease-in-out;
                             &:hover {
-                                text-decoration: none;
+                                color: $primary-color;
+                                background-color: $base-color;
+                            }
+                        }
+                        &.active {
+                            > a {
                                 background-color: $primary-color;
                             }
                         }
