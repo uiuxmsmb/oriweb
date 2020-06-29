@@ -13,6 +13,11 @@
 body {
   color: #4A4A4A;
   font-family: "Source Sans Pro", sans-serif; }
+  body.lightbg {
+    background-color: #FAFAFA; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
 
 .card {
   border-color: #E5E5EA; }
@@ -131,6 +136,8 @@ body {
       -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
               box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
       padding-top: 17px; }
+  .hero.has-overflow {
+    padding-bottom: 150px; }
 
 header {
   height: 100px;
@@ -231,6 +238,19 @@ section {
       font-size: 20px;
       font-weight: 300;
       color: #9B9B9B; }
+  section .inner-content {
+    background-color: #ffffff;
+    border: 1px solid #E5E5EA;
+    border-radius: 4px;
+    padding: 60px; }
+    section .inner-content p {
+      line-height: 28px; }
+  section.overflow-content {
+    position: relative;
+    margin-top: -270px;
+    z-index: 9; }
+    section.overflow-content .inner-content {
+      padding: 90px; }
 
 .howitworks {
   -webkit-box-shadow: 0px 1px 0px 0px #E5E5EA;

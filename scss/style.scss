@@ -8,6 +8,13 @@
 body {
     color: $text-color;
     font-family: $custom-google-font;
+    &.lightbg {
+        background-color: $light-bg;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
 }
 .card {
     border-color: $border-color;
@@ -130,6 +137,9 @@ body {
             }
         }
     }
+    &.has-overflow {
+        padding-bottom: $gap * 5;
+    }
 }
 
 header {
@@ -249,6 +259,23 @@ section {
             font-size: 20px;
             font-weight: 300;
             color: $muted-text-color;
+        }
+    }
+    .inner-content {
+        background-color: #ffffff;
+        border: 1px solid $border-color;
+        border-radius: $radius;
+        padding: $gap * 2;
+        p {
+            line-height: 28px;
+        }
+    }
+    &.overflow-content{
+        position: relative;
+        margin-top: -$gap * 9;
+        z-index: 9;
+        .inner-content {
+            padding: $gap * 3;
         }
     }
 }
