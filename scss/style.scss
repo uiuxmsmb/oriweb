@@ -16,6 +16,15 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
+blockquote {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    color: $muted-text-color;
+    line-height: 38px;
+    margin: 0;
+    margin-bottom: $gap;
+}
 .card {
     border-color: $border-color;
 }
@@ -343,6 +352,23 @@ section {
         &.third{
             &:before {
                 content: "3";
+            }
+        }
+    }
+    &.innerpage {
+        box-shadow: 0 0 0 0 $border-color;
+        .card {
+            padding: 0;
+            padding-top: $gap * 2;
+            border-color: transparent;
+            &:hover {
+                box-shadow: 0px 0 0 0px rgba(0,0,0,0);
+            }
+            .card-body {
+                padding: 0;
+                .card-text {
+                    line-height: 20px;
+                }
             }
         }
     }

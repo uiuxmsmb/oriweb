@@ -19,6 +19,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
 
+blockquote {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: #9B9B9B;
+  line-height: 38px;
+  margin: 0;
+  margin-bottom: 30px; }
+
 .card {
   border-color: #E5E5EA; }
 
@@ -305,6 +314,20 @@ section {
       content: "2"; }
     .howitworks .card.third:before {
       content: "3"; }
+  .howitworks.innerpage {
+    -webkit-box-shadow: 0 0 0 0 #E5E5EA;
+            box-shadow: 0 0 0 0 #E5E5EA; }
+    .howitworks.innerpage .card {
+      padding: 0;
+      padding-top: 60px;
+      border-color: transparent; }
+      .howitworks.innerpage .card:hover {
+        -webkit-box-shadow: 0px 0 0 0px rgba(0, 0, 0, 0);
+                box-shadow: 0px 0 0 0px rgba(0, 0, 0, 0); }
+      .howitworks.innerpage .card .card-body {
+        padding: 0; }
+        .howitworks.innerpage .card .card-body .card-text {
+          line-height: 20px; }
 
 .whyus .content {
   background: url(../img/why_image@2x.png);
