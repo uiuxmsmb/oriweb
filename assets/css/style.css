@@ -47,8 +47,13 @@ blockquote {
   .btn.btn-large {
     padding-left: 30px;
     padding-right: 30px;
-    height: 60px;
-    padding-top: 17px; }
+    height: 60px; }
+
+a.btn.btn-large {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 60px;
+  padding-top: 17px; }
 
 .hero {
   background: url(../img/hero_main_img@2x.jpg);

@@ -48,6 +48,13 @@ blockquote {
         padding-left: $gap;
         padding-right: $gap;
         height: 60px;
+    }
+}
+a.btn {
+    &.btn-large {
+        padding-left: $gap;
+        padding-right: $gap;
+        height: 60px;
         padding-top: 17px;
     }
 }
