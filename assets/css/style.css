@@ -160,6 +160,14 @@ a.btn.btn-large {
     padding-bottom: 150px; }
 
 @media screen and (max-width: 600px) {
+  .hero .hero-content {
+    padding: 30px 0; }
+    .hero .hero-content h2 {
+      font-size: 32px;
+      margin-bottom: 15px; }
+    .hero .hero-content p {
+      font-size: 16px;
+      margin-bottom: 60px; }
   .hero.home .hero-content {
     padding: 60px 0; }
     .hero.home .hero-content h2 {
@@ -321,7 +329,11 @@ section {
         font-size: 32px;
         margin-bottom: 15px; }
       section .section-heading p {
-        font-size: 16px; } }
+        font-size: 16px; }
+    section.overflow-content {
+      margin-top: -210px; }
+      section.overflow-content .inner-content {
+        padding: 30px; } }
 
 .howitworks {
   -webkit-box-shadow: 0px 1px 0px 0px #E5E5EA;
@@ -722,9 +734,18 @@ footer {
     padding: 20px 0; }
 
 @media screen and (max-width: 600px) {
-  footer .footer-nav,
-  footer .footer-sm-nav {
-    display: none; } }
+  footer {
+    padding-top: 30px; }
+    footer .footer-mid-section.d-flex {
+      display: block !important;
+      text-align: center; }
+      footer .footer-mid-section.d-flex .logo {
+        margin-bottom: 15px; }
+    footer .footer-nav,
+    footer .footer-sm-nav {
+      display: none; }
+    footer .copyright {
+      margin-top: 30px; } }
 
 .projectpage {
   padding: 0; }

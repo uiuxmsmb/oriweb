@@ -167,6 +167,18 @@ a.btn {
 }
 @media screen and (max-width: 600px) {
     .hero {
+        .hero-content {
+            padding: $gap 0;
+                
+            h2 {
+                font-size: 32px;
+                margin-bottom: $gap / 2;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: $gap * 2;
+            }
+        }
         &.home {
             .hero-content {
                 padding: $gap * 2 0;
@@ -373,6 +385,12 @@ section {
             }
             p {
                 font-size: 16px;
+            }
+        }
+        &.overflow-content{
+            margin-top: -$gap * 7;
+            .inner-content {
+                padding: $gap;
             }
         }
     }
@@ -857,9 +875,21 @@ footer {
 }
 @media screen and (max-width: 600px) {
     footer {
+        padding-top: $gap;
+        .footer-mid-section.d-flex {
+            display: block !important;
+            text-align: center;
+            .logo {
+                margin-bottom: $gap / 2;
+            }
+
+        }
         .footer-nav,
         .footer-sm-nav {
             display: none;
+        }
+        .copyright {
+            margin-top: $gap;
         }
     }
 }
