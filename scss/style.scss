@@ -1166,3 +1166,16 @@ footer {
         width: 200px;
     }
 }
+@media screen and (max-width: 600px) {
+    .btn-kemitraan {
+        .btn {
+            width: auto;
+            &.btn-large {
+                font-size: 14px;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 20px;
+            }
+        }
+    }
+}
