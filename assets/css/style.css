@@ -312,6 +312,17 @@ section {
       section.overflow-content .inner-content.sm {
         padding: 0; }
 
+@media screen and (max-width: 600px) {
+  section {
+    padding: 60px 0; }
+    section .section-heading {
+      margin-bottom: 45px; }
+      section .section-heading h3 {
+        font-size: 32px;
+        margin-bottom: 15px; }
+      section .section-heading p {
+        font-size: 16px; } }
+
 .howitworks {
   -webkit-box-shadow: 0px 1px 0px 0px #E5E5EA;
           box-shadow: 0px 1px 0px 0px #E5E5EA; }
@@ -431,6 +442,11 @@ section {
         font-size: 22px;
         margin-top: 5px;
         font-weight: 600; }
+
+@media screen and (max-width: 600px) {
+  .whyus .content {
+    background: none;
+    padding: 0; } }
 
 .theproject.homeproject {
   background-color: #FAFAFA; }
@@ -647,6 +663,10 @@ section {
     width: 100%;
     max-width: 922px; }
 
+@media screen and (max-width: 480px) {
+  .maediapartner {
+    display: none; } }
+
 footer {
   background-color: #2B2B2B;
   color: #ffffff;
@@ -700,6 +720,11 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 20px 0; }
+
+@media screen and (max-width: 600px) {
+  footer .footer-nav,
+  footer .footer-sm-nav {
+    display: none; } }
 
 .projectpage {
   padding: 0; }

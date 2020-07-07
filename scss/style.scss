@@ -362,6 +362,21 @@ section {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    section {
+        padding: $gap * 2 0;
+        .section-heading {
+            margin-bottom: $gap * 1.5;
+            h3 {
+                font-size: 32px;
+                margin-bottom: $gap / 2;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
 
 // Section bagaimana
 .howitworks {
@@ -446,7 +461,6 @@ section {
 // Section kenapa
 .whyus {
     .content {
-        // min-height: 626px;
         background: url(../img/why_image@2x.png);
         background-repeat: no-repeat;
         background-size: 705px 626px;
@@ -498,6 +512,14 @@ section {
                     font-weight: 600;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .whyus {
+        .content {
+            background: none;
+            padding: 0;
         }
     }
 }
@@ -753,6 +775,11 @@ section {
         max-width: 922px;
     }
 }
+@media screen and (max-width: 480px) {
+    .maediapartner {
+        display: none;
+    }
+}
 
 // Footer
 footer {
@@ -828,6 +855,15 @@ footer {
         padding: $gap / 1.5 0;
     }
 }
+@media screen and (max-width: 600px) {
+    footer {
+        .footer-nav,
+        .footer-sm-nav {
+            display: none;
+        }
+    }
+}
+
 
 // Project Page
 .projectpage {
