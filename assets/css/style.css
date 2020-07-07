@@ -159,6 +159,16 @@ a.btn.btn-large {
   .hero.has-overflow {
     padding-bottom: 150px; }
 
+@media screen and (max-width: 600px) {
+  .hero.home .hero-content {
+    padding: 60px 0; }
+    .hero.home .hero-content h2 {
+      font-size: 32px;
+      margin-bottom: 15px; }
+    .hero.home .hero-content p {
+      font-size: 16px;
+      margin-bottom: 60px; } }
+
 header {
   height: 100px;
   position: relative;
