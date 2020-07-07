@@ -250,6 +250,28 @@ header {
         header nav ul > li:hover > ul {
           display: block; }
 
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+    text-align: center; }
+    header .d-flex {
+      display: block !important; }
+    header .logo {
+      line-height: 60px; }
+    header nav {
+      display: none; }
+    header .phone {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      padding: 0;
+      display: inline-block;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 30px; }
+      header .phone > i.icon {
+        margin-right: 10px; } }
+
 section {
   padding: 120px 0; }
   section .section-heading {

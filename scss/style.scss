@@ -275,6 +275,33 @@ header {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        text-align: center;
+        .d-flex {
+            display: block !important;
+        }
+        .logo {
+            line-height: 60px;
+        }
+        nav {
+            display: none;
+        }
+        .phone {
+            box-shadow: none;
+            padding: 0;
+            display: inline-block;
+            padding: 5px 20px;
+            margin-bottom: 10px;
+            background-color: rgba(0,0,0,.2);
+            border-radius: 30px;
+            > i.icon {
+                margin-right: $gap / 3;
+            }
+        }
+    }
+}
 
 
 // Section
