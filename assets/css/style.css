@@ -521,6 +521,18 @@ section {
         top: 51%;
         background: -o-repeating-linear-gradient(left, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px);
         background: repeating-linear-gradient(to right, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px); }
+  .theproject .card .card-body .btn {
+    margin: -20px;
+    margin-top: 0;
+    margin-bottom: -22px;
+    display: block;
+    border-radius: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 0;
+    border-top: 1px solid #E5E5EA;
+    background-color: transparent !important;
+    color: #4CA2CD; }
   .theproject .card:hover {
     -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
             box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.09);
@@ -531,6 +543,8 @@ section {
               transform: scale(1.2); }
     .theproject .card:hover .card-body .card-title > a {
       color: #4CA2CD; }
+    .theproject .card:hover .card-body .btn {
+      color: #4A4A4A; }
 
 .orifact .fact-circle {
   margin-bottom: 30px;
