@@ -394,7 +394,7 @@ section {
         &.overflow-content{
             margin-top: -$gap * 7;
             .inner-content {
-                padding: $gap / 1.5;
+                padding: $gap;
                 .img-fluid.mb-5 {
                     margin-bottom: $gap / 2 !important;
                 }
