@@ -239,6 +239,8 @@ header {
                 background-color: #F7F8FD; }
             header nav ul > li > ul > li.active > a {
               background-color: #4CA2CD; }
+              header nav ul > li > ul > li.active > a:hover {
+                color: #ffffff; }
         header nav ul > li:hover > ul {
           display: block; }
 
@@ -261,12 +263,16 @@ section {
     padding: 60px; }
     section .inner-content p {
       line-height: 28px; }
+    section .inner-content.sm {
+      padding: 0; }
   section.overflow-content {
     position: relative;
     margin-top: -270px;
     z-index: 9; }
     section.overflow-content .inner-content {
       padding: 90px; }
+      section.overflow-content .inner-content.sm {
+        padding: 0; }
 
 .howitworks {
   -webkit-box-shadow: 0px 1px 0px 0px #E5E5EA;
@@ -701,3 +707,155 @@ footer {
         line-height: 33px; }
         .people .people-content .social-icons .icon:hover {
           color: #4A4A4A; }
+
+.projectdetail.overflow-content .projectdetail-inner {
+  margin-bottom: 90px; }
+
+.projectdetail.overflow-content .theproject {
+  margin-top: 45px; }
+
+.projectdetail.overflow-content .download {
+  background-color: #F5BE23;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 4px;
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: ease-in-out background-color 0.25s;
+  -o-transition: ease-in-out background-color 0.25s;
+  transition: ease-in-out background-color 0.25s; }
+  .projectdetail.overflow-content .download:hover {
+    text-decoration: none;
+    background-color: #e0a80a; }
+  .projectdetail.overflow-content .download .heading {
+    display: block;
+    font-weight: 700;
+    margin: 0;
+    padding: 0; }
+  .projectdetail.overflow-content .download small {
+    margin: 0;
+    padding: 0;
+    display: block; }
+  .projectdetail.overflow-content .download .ricon {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    width: 52px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px; }
+
+.projectdetail.overflow-content .inner-content .projectimg {
+  position: relative;
+  margin: -90px;
+  margin-bottom: 60px;
+  overflow: hidden; }
+  .projectdetail.overflow-content .inner-content .projectimg img {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+  .projectdetail.overflow-content .inner-content .projectimg:before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    z-index: 1;
+    width: 100%; }
+  .projectdetail.overflow-content .inner-content .projectimg .project-status {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 0;
+    background: #67b26f;
+    background: -o-linear-gradient(315deg, #67b26f 0%, #4ca2cd 100%);
+    background: linear-gradient(135deg, #67b26f 0%, #4ca2cd 100%);
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 15px 0 0 15px; }
+    .projectdetail.overflow-content .inner-content .projectimg .project-status.closed {
+      background: #9B9B9B; }
+
+.projectdetail.overflow-content .inner-content.sm {
+  padding: 0;
+  margin-bottom: 20px; }
+  .projectdetail.overflow-content .inner-content.sm .heading {
+    padding: 20px 30px;
+    border-bottom: 1px solid #E5E5EA;
+    background-color: #FAFAFA; }
+    .projectdetail.overflow-content .inner-content.sm .heading p {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0; }
+    .projectdetail.overflow-content .inner-content.sm .heading h4 {
+      font-size: 30px;
+      color: #4CA2CD;
+      margin: 0;
+      padding: 0; }
+  .projectdetail.overflow-content .inner-content.sm .content {
+    padding: 30px; }
+    .projectdetail.overflow-content .inner-content.sm .content .project-progress {
+      margin-bottom: 20px; }
+      .projectdetail.overflow-content .inner-content.sm .content .project-progress .text-label {
+        margin-bottom: 7.5px;
+        font-size: 16px; }
+        .projectdetail.overflow-content .inner-content.sm .content .project-progress .text-label span > strong {
+          color: #4A4A4A; }
+        .projectdetail.overflow-content .inner-content.sm .content .project-progress .text-label strong {
+          color: #4CA2CD; }
+      .projectdetail.overflow-content .inner-content.sm .content .project-progress .progress {
+        padding: 4px;
+        background-color: rgba(0, 0, 0, 0.05);
+        height: 18px;
+        border-radius: 9px; }
+        .projectdetail.overflow-content .inner-content.sm .content .project-progress .progress .progress-bar {
+          border-radius: 5px;
+          background: #67b26f;
+          background: -o-linear-gradient(315deg, #67b26f 0%, #4ca2cd 100%);
+          background: linear-gradient(135deg, #67b26f 0%, #4ca2cd 100%); }
+    .projectdetail.overflow-content .inner-content.sm .content .content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .projectdetail.overflow-content .inner-content.sm .content .content-list > li {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 6px 0;
+        color: #9B9B9B; }
+        .projectdetail.overflow-content .inner-content.sm .content .content-list > li span, .projectdetail.overflow-content .inner-content.sm .content .content-list > li strong {
+          position: relative;
+          z-index: 2;
+          background-color: #ffffff;
+          padding-right: 5px; }
+        .projectdetail.overflow-content .inner-content.sm .content .content-list > li > strong {
+          color: #4A4A4A;
+          font-weight: 700;
+          padding-right: 0;
+          padding-left: 5px; }
+        .projectdetail.overflow-content .inner-content.sm .content .content-list > li:before {
+          left: 0;
+          right: 0;
+          position: absolute;
+          height: 1px;
+          content: "";
+          top: 51%;
+          background: -o-repeating-linear-gradient(left, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px);
+          background: repeating-linear-gradient(to right, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px); }
