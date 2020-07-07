@@ -39,11 +39,17 @@ blockquote {
     border-color: #F5BE23;
     color: #ffffff;
     border-radius: 4px; }
+    .btn.btn-primary:hover {
+      color: #ffffff;
+      background-color: #e0a80a; }
   .btn.btn-success {
     background-color: #67B26F;
     border-color: #67B26F;
     color: #ffffff;
     border-radius: 4px; }
+    .btn.btn-success:hover {
+      color: #ffffff;
+      background-color: #4f9c57; }
   .btn.btn-large {
     padding-left: 30px;
     padding-right: 30px;
