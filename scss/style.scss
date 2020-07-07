@@ -24,6 +24,10 @@ blockquote {
     line-height: 38px;
     margin: 0;
     margin-bottom: $gap;
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 .card {
     border-color: $border-color;
@@ -390,7 +394,10 @@ section {
         &.overflow-content{
             margin-top: -$gap * 7;
             .inner-content {
-                padding: $gap;
+                padding: $gap / 1.5;
+                .img-fluid.mb-5 {
+                    margin-bottom: $gap / 2 !important;
+                }
             }
         }
     }
@@ -970,6 +977,11 @@ footer {
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 600px) {
+    .people {
+        margin-bottom: $gap;
     }
 }
 
