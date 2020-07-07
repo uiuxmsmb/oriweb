@@ -968,6 +968,13 @@ footer {
           background: -o-repeating-linear-gradient(left, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px);
           background: repeating-linear-gradient(to right, #E5E5EA, #E5E5EA 3px, #ffffff 3px, #ffffff 6px); }
 
+@media screen and (max-width: 600px) {
+  .projectdetail.overflow-content .inner-content {
+    margin-bottom: 20px; }
+    .projectdetail.overflow-content .inner-content .projectimg {
+      margin: -30px;
+      margin-bottom: 20px; } }
+
 .btn-kemitraan {
   margin: 30px 0; }
   .btn-kemitraan .btn {
