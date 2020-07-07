@@ -227,6 +227,9 @@ header {
             margin-right: $gap / 2;
         }
     }
+    .burger {
+        display: none;
+    }
     nav {
         margin-right: $gap / 2;
         ul {
@@ -319,8 +322,75 @@ header {
         .logo {
             line-height: 60px;
         }
+        .burger {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            display: block;
+            background-color:rgba(255,255,255,.1);
+            border-radius: 0 0 $radius 0;
+            border: 1px solid rgba(255,255,255,.3);
+            top: -1px;
+            left: -1px;
+            text-align: center;
+            line-height: 50px;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+        }
         nav {
             display: none;
+            margin-right: 0;
+            background-color:#ffffff;
+            border-radius: $radius;
+            margin-bottom: $gap;
+            &.burgerclick {
+                display: block;
+            }
+            ul {
+                padding: $gap / 2;
+                > li {
+                    display: block;
+                    &.active {
+                        &:after {
+                            display: none;
+                        }
+                        > a {
+                            color: #ffffff;
+                            background-color: $primary-color;
+                        }
+                    }
+                    > a {
+                        border-radius: $radius;
+                        color: $text-color;
+                        padding: $gap / 2 $gap;
+                        &:hover {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+                    > ul {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        display: block;
+                        padding: 0;
+                        box-shadow: none;
+                        > li {
+                            width: 100%;
+                            text-transform: uppercase;
+                            > a {
+                                padding: $gap / 2 $gap;
+                            }
+                        }
+                    }
+                    &.hideme {
+                        > a {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
         }
         .phone {
             box-shadow: none;

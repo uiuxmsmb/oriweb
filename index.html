@@ -28,6 +28,7 @@
 
   <!-- Main template styling -->
   <link rel="stylesheet" href="assets/css/style.css">
+ 
   
 </head>
 
@@ -41,11 +42,12 @@
         <div class="logo">
           <a href="index.html">ORI</a>
         </div><!-- /.logo -->
+        <div class="burger" id="burger"><i class="icon feather-menu"></i></div>
 
         <div class="main-nav d-flex justify-content-between">
           <nav>
             <ul>
-                <li class="active"><a href="tentang.html">Profil</a>
+                <li><a href="tentang.html">Profil</a>
                   <ul>
                     <li><a href="tentang.html">Tentang ORI</a></li>
                     <li><a href="mitra.html">Mitra ORI</a></li>
@@ -377,6 +379,12 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap Bundle JS -->
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+  <script>
+    $( ".main-nav > nav > ul > li" ).has( "ul" ).addClass( "hideme" );
+    $("#burger").click(function(){
+      $(".main-nav > nav").toggleClass("burgerclick");
+    });
+  </script>
 </body>
 
 </html>
